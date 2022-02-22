@@ -4,7 +4,7 @@ import Profile from './Profile';
 
 function App() {
   return (
-      <Profile name="[YOUR NAME]" bio="[YOUR SHORT BIO GOES HERE]" />
+      <Profile name="Nancy" bio="I am learning React, :) this is my REACTion so far :)" />
   );
 }
 
