@@ -1,0 +1,68 @@
+
+
+.container {
+width: 800px;
+margin:  auto;
+}
+
+.quote {
+    margin: auto;
+    width: 50%;
+}
+.quote-author {
+    padding: 20px;
+}
+blockquote {
+    background-color: #bbd3bf;
+    border-left: 10px solid #113e21;
+    margin: 1.5em 10px;
+    padding: 1.5em 9px;
+    width: 300px;
+    height: 160px;
+    quotes: "\201C""\201D""\2018""\2019";
+    
+}
+blockquote::before{
+    /* color: #614829; */
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+
+}
+
+span {
+    font-weight: bold;
+    color: #113e21;
+}
+.last-text {
+    font-family: 'Great Vibes', cursive;
+    font-size: 35px;
+    text-align: center;
+    color: #113e21;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 500px;
+        margin:  auto;
+        }
+    blockquote {
+        margin: 1.1em 8px;
+        padding: 1.5em 9px;
+        width: 220px;
+        height: 220px;
+        quotes: "\201C""\201D""\2018""\2019";
+        
+    }
+    blockquote::before{
+        color: #a09f9f;
+        content: open-quote;
+        font-size: 4em;
+        line-height: 0.1em;
+        margin-right: 0.25em;
+        vertical-align: -0.4em;
+    
+    }
+}
