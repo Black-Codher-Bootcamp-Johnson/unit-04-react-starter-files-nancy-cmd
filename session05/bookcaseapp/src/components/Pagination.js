@@ -3,7 +3,7 @@ import React, {useEffect, useState } from "react";
 import bookList from '../models/books.json';
 
 const PaginationComponent = (props) => {
-    const { addBook, Book, book }= props;
+    const { Book, book }= props;
     const [currentPage, setCurrentPage] = useState(0);
     
     const [books, setBooks] = useState([]);
@@ -32,7 +32,7 @@ const offset = currentPage * PER_PAGE;
 
 const currentPageData = books
     .slice(offset, offset + PER_PAGE)
-    .map(book => <Book onClick={() => addBook(book.volumeInfo.title)} key={book.id} book={book}/>);
+    .map((book) => (<Book  key={book.id} book={book}  {...props}/>));
 
 const pageCount = Math.ceil(books.length / PER_PAGE);
 

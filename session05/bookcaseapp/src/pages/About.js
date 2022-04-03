@@ -26,7 +26,7 @@ const AboutUsPage = (props) => {
         This bookcase app displays a list of books that a user can
         save to a local bookcase.
         <br></br>
-        Click on the "<span>Add + </span>" button to add a book to your bookcase.
+        Click on the "<span className="span">Add + </span>" button to add a book to your bookcase.
         Use the search bar to find the latest books by name, author
         or description
         </p>

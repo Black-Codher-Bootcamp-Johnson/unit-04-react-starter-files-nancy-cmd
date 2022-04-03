@@ -2,7 +2,7 @@ import React from 'react';
 import '../css/main.css';
 
 
-const Book = ({book, ...props}) =>{
+const Book = ({addToBookcase, stored, book, removeFromBookcase}) =>{
   const {
    id,
     volumeInfo:{
@@ -35,9 +35,9 @@ const Book = ({book, ...props}) =>{
     </div>
 
     <div>
-    {props.stored==="library" ? 
-    <button className='btn' onClick={() =>props.addToBookcase(id)}> Add +</button>:
-    <button className="remove-button" onClick={() => props.removeFromBookcase(id)}>x</button>
+    {stored==="library" ? 
+    <button className='btn' onClick={() =>addToBookcase(id)}> Add +</button>:
+    <button className="remove-button" onClick={() => removeFromBookcase(id)}>x</button>
     }
     </div>
     </div>

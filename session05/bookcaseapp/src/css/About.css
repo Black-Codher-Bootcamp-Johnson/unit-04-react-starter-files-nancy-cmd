@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Inter:wght@200;300;500;600&display=swap');
 
 .container {
 width: 800px;
@@ -7,7 +7,8 @@ margin:  auto;
 
 .quote {
     margin: auto;
-    width: 50%;
+    width: 300px;
+    
 }
 .quote-author {
     padding: 20px;
@@ -20,6 +21,8 @@ blockquote {
     width: 300px;
     height: 160px;
     quotes: "\201C""\201D""\2018""\2019";
+    box-shadow: 0 20px 90px -50px #0e0d0d;
+    border-radius: 8px;
     
 }
 blockquote::before{
@@ -32,12 +35,19 @@ blockquote::before{
 
 }
 
-span {
-    font-weight: bold;
-    color: #113e21;
+.span {
+    padding: 5px 7px;
+    border: 0px;  
+    border-radius: 16px;
+    width: 40px;
+    height: 30px;
+    color:#fff;
+    font-size:0.9em;
+    background-color: #113e21;
+    margin: 8px;
 }
 .last-text {
-    font-family: 'Great Vibes', cursive;
+    font-family: 'Dancing Script', cursive;
     font-size: 35px;
     text-align: center;
     color: #113e21;
